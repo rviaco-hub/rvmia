@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding-top: 80px;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #020617;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #cbd5f5;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+}
+
+.menu-toggle span {
+  width: 26px;
+  height: 2px;
+  background: #e5e7eb;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.slides.active {
+  opacity: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2,6,23,.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  color: #22c55e;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 10%;
+}
+
+.section.gray {
+  background: #020617;
+}
+
+.section.dark {
+  background: #020617;
+  text-align: center;
+}
+
+/* SERVICES */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #020617;
+  padding: 30px;
+  border-left: 4px solid #22c55e;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #020617;
+  padding: 40px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #020617;
+  color: #64748b;
+}
+
+/* ANIMACIONES */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-toggle { display: flex; }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #020617;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease;
+  }
+
+  .nav-menu.active {
+    max-height: 300px;
+  }
+
+  .nav-menu li {
+    text-align: center;
+    padding: 15px;
+  }
+}
