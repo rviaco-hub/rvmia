@@ -1,0 +1,303 @@
+/* ================================================= */
+/* PAGES */
+/* ================================================= */
+
+.page-hero {
+
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 180px 8% 120px;
+
+  background:
+    linear-gradient(rgba(0,0,0,.75),
+    rgba(0,0,0,.75)),
+    url("../assetss/WPBMS.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
+
+}
+
+.page-hero-overlay {
+
+  max-width: 1000px;
+
+}
+
+.page-hero h1 {
+
+  font-size: clamp(2.5rem, 6vw, 5rem);
+
+  margin: 20px 0;
+
+}
+
+.page-hero p {
+
+  font-size: 1.15rem;
+
+  max-width: 800px;
+
+  margin: auto;
+
+}
+
+.page-grid-2 {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+
+  margin-top: 60px;
+background: rgba(255,255,255,.04);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  padding: 30px;
+
+  border-radius: 18px;
+}
+
+.page-grid-2 img {
+
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+
+}
+
+.page-grid-2 ul{
+    list-style:none;
+    padding:0;
+    margin:35px 0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:1px;
+}
+
+.page-grid-2 ul li{
+    padding:18px 24px;
+    border-left:4px solid var(--primary);
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.06);
+    font-weight:600;
+    color:var(--secondary);
+    transition:.3s ease;
+}
+
+.page-grid-2 ul li:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+}
+
+.page-grid-2 ul li::before{
+    content:"✓";
+    color:var(--primary);
+    font-weight:700;
+    margin-right:12px;
+}
+
+.page-grid-3 {
+
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+
+  gap: 30px;
+
+  margin-top: 60px;
+
+}
+
+.page-grid-4 {
+
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+
+  gap: 30px;
+
+  margin-top: 60px;
+
+}
+
+.page-card {
+
+  background: rgba(255,255,255,.04);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  padding: 30px;
+
+  border-radius: 18px;
+
+}
+
+.page-card h3 {
+
+  margin-bottom: 20px;
+
+}
+
+.page-card ul {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+}
+
+.cta-center {
+
+  max-width: 800px;
+
+  margin: auto;
+
+  text-align: center;
+
+}
+
+.cta-btn {
+
+  display: inline-block;
+
+  margin-top: 30px;
+
+  padding: 14px 30px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+}
+
+@media(max-width:992px){
+
+  .page-grid-2,
+  .page-grid-3,
+  .page-grid-4{
+
+    grid-template-columns:1fr;
+
+  }
+
+}
+
+
+
+/* ===========================
+   CASOS DE USO
+=========================== */
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:50px;
+}
+
+.grid-3 > div{
+    padding:35px;
+    border-radius:18px;
+    border:1px solid rgba(0,0,0,.06);
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    transition:.35s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+.grid-3 > div::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #00d4ff
+    );
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:.4s;
+}
+
+.grid-3 > div:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.grid-3 > div:hover::before{
+    transform:scaleX(1);
+}
+
+.grid-3 h3{
+    color:var(--secondary);
+    margin-bottom:15px;
+    font-size:1.3rem;
+    line-height:1.3;
+}
+
+.grid-3 p{
+    line-height:1.8;
+    margin:0;
+}
+
+.industry-header{
+    max-width:900px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.industry-badge{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:50px;
+    background:rgba(0,174,239,.1);
+    color:var(--primary);
+    font-size:.85rem;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+.industry-header h2{
+    font-size:2.8rem;
+    color:var(--secondary);
+    margin-bottom:20px;
+}
+
+.industry-header p{
+    max-width:800px;
+    margin:auto;
+    color:#64748b;
+    line-height:1.9;
+}
+
+@media(max-width:991px){
+
+    .grid-3{
+        grid-template-columns:1fr;
+    }
+
+    .industry-header h2{
+        font-size:2rem;
+    }
+
+}
