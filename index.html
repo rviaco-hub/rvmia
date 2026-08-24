@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,13 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>RVMIA | Ingeniería, Automatización, BMS & HVAC | Infraestructura Inteligente, ventilación y aires
-    acondicionados</title>
+  <title>Ingeniería, Software, Automatización, BMS, IIoT & HVAC | RVMIA</title>
+
   <meta name="description"
-    content="Empresa especializada en suministro, instalación y mantenimiento de aire acondicionado, ventilación mecánica, HVAC, automatización BMS e IIoT en Barranquilla, Atlántico y toda Colombia." />
+    content="RVMIA desarrolla soluciones de ingeniería, software, automatización, BMS, IIoT y HVAC: aplicaciones web, APIs, dashboards, plataformas, integración de dispositivos, software industrial y sistemas para Industria 4.0 en Colombia." />
 
   <meta name="keywords"
-    content="Barranquilla, Soledad, Atlántico, Colombia, AC, Aires acondicionados, , Ventilación mecánica, BMS, IioT, HVAC, automatización, ingeniería, sistemas industriales, monitoreo, software industrial, control edificios, SCADA, ESP32, sensores, Colombia, RVMIA" />
+    content="RVMIA, ingeniería, desarrollo de software, software industrial, aplicaciones web, APIs, backend, dashboards, analítica, cloud, integración de dispositivos, BMS, BMA, IIoT, IoT industrial, HVAC, aire acondicionado, ventilación mecánica, automatización, SCADA, BACnet, Modbus, MQTT, Industria 4.0, Colombia" />
 
   <meta name="author" content="RVMIA" />
   <meta name="robots" content="index, follow" />
@@ -22,16 +23,17 @@
 
   <!-- OPEN GRAPH -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="RVMIA | Ingeniería & Automatización" />
+  <meta property="og:title" content="RVMIA | Ingeniería, Software & Automatización" />
   <meta property="og:description"
-    content="Soluciones profesionales en BMS, IoT industrial, HVAC, automatización y monitoreo inteligente." />
+    content="Soluciones profesionales en ingeniería, desarrollo de software, BMS, IIoT, HVAC, automatización y monitoreo inteligente." />
   <meta property="og:image" content="./assetss/WPBMS.jpg" />
   <meta property="og:locale" content="es_CO" />
 
   <!-- TWITTER -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="RVMIA | Ingeniería & Automatización" />
-  <meta name="twitter:description" content="Ingeniería tecnológica, automatización, BMS, IoT y HVAC industrial." />
+  <meta name="twitter:title" content="RVMIA | Ingeniería, Software & Automatización" />
+  <meta name="twitter:description"
+    content="Ingeniería, desarrollo de software, automatización, BMS, IIoT y HVAC industrial." />
   <meta name="twitter:image" content="./assetss/WPBMS.jpg" />
 
   <!-- CANONICAL -->
@@ -49,6 +51,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
 
+
   <!-- STRUCTURED DATA -->
   <script type="application/ld+json">
 {
@@ -64,7 +67,7 @@
       "image":"https://rvmia.com/assetss/WPBMS.jpg",
       "telephone":"+57-301-189-9923",
       "email":"gerencia@rvmia.com",
-      "description":"Empresa de ingeniería especializada en instalación y mantenimiento de aire acondicionado, HVAC, ventilación mecánica, automatización BMS, IoT industrial, monitoreo energético y edificios inteligentes.",
+      "description":"Empresa de ingeniería y tecnología especializada en HVAC, ventilación mecánica, automatización BMS y BMA, IIoT, monitoreo, integración de dispositivos y desarrollo de software, incluyendo aplicaciones web, APIs, dashboards, plataformas y soluciones industriales.",
       "priceRange":"$$",
 
       "address":{
@@ -168,6 +171,16 @@
 
     {
       "@type":"Service",
+      "serviceType":"Desarrollo de Software",
+      "description":"Desarrollo de aplicaciones web, APIs, backend, dashboards, analítica, plataformas cloud, software industrial e integración de dispositivos y sistemas.",
+      "provider":{
+        "@id":"https://rvmia.com/#business"
+      },
+      "areaServed":"Colombia"
+    },
+
+    {
+      "@type":"Service",
       "serviceType":"ventas de Equipos, Maquinaria e Instrumentación",
       "provider":{
         "@id":"https://bigstore.rvmia.com/"
@@ -200,32 +213,35 @@
       <ul class="nav-menu" id="navMenu">
 
         <li>
-          <a href="#home">Inicio</a>
+          <a href="/">Inicio</a>
         </li>
 
         <li>
-          <a href="#about">Empresa</a>
+          <a href="/#about">Empresa</a>
+        </li>
+        
+        <li>
+          <a href="/#industry40">Industria 4.0</a>
         </li>
 
         <li>
-          <a href="#services">Servicios</a>
+          <a href="/#services">Servicios</a>
         </li>
 
         <li>
-          <a href="#solutions">Soluciones</a>
-        </li>
-
-
-        <li>
-          <a href="#industry40">Industria 4.0</a>
+          <a href="/#solutions">Soluciones</a>
         </li>
 
         <li>
-          <a href="./pages/formulario-contacto-rvmia.html" class="nav-cta">
-            Solicitar Diagnóstico
+          <a href="/pages/desarrollo-de-sistemas-web-software.html">Ingeniería de Software</a>
+        </li>
+
+        <li>
+          <a href="/pages/formulario-contacto-rvmia.html" class="nav-cta">
+            Contáctanos
           </a>
         </li>
-
+        
       </ul>
 
     </div>
@@ -233,7 +249,7 @@
   </nav>
 
   <!-- HERO -->
-  <header class="hero">
+  <header class="hero" id="home">
 
     <div class="slides active" style="background-image: url('./assetss/WPBMS.jpg')"></div>
 
@@ -242,19 +258,17 @@
     <div class="slides" style="background-image: url('./assetss/WPSUN.png')"></div>
 
     <div class="hero-overlay">
-      <h1>Ingeniería HVAC & Automatización</h1>
-      <p>BMS · IoT · HVAC · SISTEMAS 4.0</p>
+      <h1>Ingeniería, Software & Automatización</h1>
+      <p>HVAC · BMS · BMA · IIoT · SOFTWARE · INDUSTRIA 4.0</p>
     </div>
 
   </header>
 
   <!-- BRANDS -->
-  <!-- BRANDS -->
   <section class="logo-strip">
 
     <div class="logo-track">
 
-      <!-- GROUP 1 -->
       <div class="logo-group">
 
         <img src="https://brandportal.carrier.com/m/99b434eac013f6f/webimage-carrier_logo_rgb.png" alt="Carrier" />
@@ -271,7 +285,6 @@
 
       </div>
 
-      <!-- GROUP 2 -->
       <div class="logo-group">
 
         <img src="https://brandportal.carrier.com/m/99b434eac013f6f/webimage-carrier_logo_rgb.png" alt="Carrier" />
@@ -301,33 +314,29 @@
 
     <div class="about-container">
 
-      <!-- LEFT -->
       <div class="about-left">
 
         <p>
-
-          RVMIA (Refrigeration and Ventilation Managements IA S.A.S.) es una empresa de ingeniería especializada en
-          sistemas de aire acondicionado, ventilación mecánica, refrigeración y mantenimiento HVAC para infraestructura
-          residencial, comercial, institucional e industrial.
-          Desarrollamos soluciones integrales que abarcan consultoría, diseño, suministro, instalación, puesta en
-          marcha, mantenimiento, modernización y soporte técnico especializado, acompañando a nuestros clientes durante
-          todo el ciclo de vida de sus activos.
+          RVMIA S.A.S. es una empresa de ingeniería y tecnología, que desarrolla soluciones para edificios, industrias e
+          infraestructuras, integrando sistemas físicos,
+          automatización, conectividad e ingeniería de software. Trabajamos en entornos residenciales, comerciales,
+          institucionales e
+          industriales, adaptando cada solución a las necesidades operativas y al nivel de complejidad de cada proyecto.
 
           <br />
           <br />
-          Nuestro enfoque se basa en la mantenibilidad, la eficiencia energética, la confiabilidad operativa y la
-          continuidad de los procesos, implementando soluciones orientadas a facilitar la operación, reducir costos y
-          prolongar la vida útil de la infraestructura.
-          Como evolución natural de nuestros servicios HVAC, integramos tecnologías de automatización, Building
-          Management Systems (BMS), monitoreo remoto, analítica e Industrial IoT (IIoT), transformando sistemas
-          convencionales en infraestructura inteligente preparada para los desafíos de la Industria 4.0.
+
+          Entendemos que la infraestructura moderna ya no funciona como sistemas aislados. Por eso conectamos equipos,
+          sensores, controladores, protocolos y plataformas digitales para transformar información operativa en
+          herramientas útiles de monitoreo, análisis y toma de decisiones. Desarrollamos aplicaciones web, APIs,
+          dashboards, plataformas de gestión, integraciones y soluciones de software orientadas a necesidades técnicas,
+          administrativas,
+          operativas e industriales.
 
         </p>
 
       </div>
 
-      <!-- RIGHT -->
-      <!-- RIGHT -->
       <div class="about-right">
 
         <!-- MISION -->
@@ -344,14 +353,15 @@
           <div class="about-content">
 
             <p>
-              Diseñar, implementar y evolucionar infraestructura inteligente mediante soluciones de climatización,
-              ventilación mecánica, automatización y monitoreo, integrando ingeniería y tecnología para mejorar la
+              Diseñar, implementar y evolucionar infraestructura inteligente mediante soluciones integrales de ingeniría
+              y tecnología, para mejorar la
               eficiencia, confiabilidad y sostenibilidad de nuestros clientes.
             </p>
 
           </div>
 
         </div>
+
 
         <!-- VISION -->
         <div class="about-card">
@@ -382,16 +392,14 @@
 
   </section>
 
-  <!-- =========================================
-NUEVA SECTION | INDUSTRIA 4.0 + IoT HVAC
-UBICAR DESPUÉS DE ABOUT
-========================================= -->
-
+  <!-- INDUSTRIA 4.0 -->
   <section id="industry40" class="section industry-section reveal">
 
     <div class="industry-header">
       <span class="industry-badge">INDUSTRIA 4.0</span>
+
       <h2>Transformamos sistemas HVAC tradicionales en infraestructura inteligente</h2>
+
       <p>
         Integramos IoT, monitoreo remoto, automatización, analítica y mantenimiento predictivo
         para convertir activos HVAC en sistemas conectados y gestionables desde cualquier lugar.
@@ -408,7 +416,7 @@ UBICAR DESPUÉS DE ABOUT
       </div>
 
       <div class="industry-card">
-        <h3>IoT & Sensórica</h3>
+        <h3>IoT &amp; Sensórica</h3>
         <p>
           Integración de sensores inteligentes para control térmico, calidad de aire y energía.
         </p>
@@ -430,176 +438,18 @@ UBICAR DESPUÉS DE ABOUT
 
     </div>
 
+      <button class="cta-btn" style="width: 100%; background-color: aqua;" onclick="window.location.href='./pages/industria4.0-iiot-tecnologia-mttq-OPC UA-edgecomputing.html'">
+        Quieres más información? click aquí
+      </button>
   </section>
 
-
-  <!-- =========================================
-NUEVA SECTION | PORTAFOLIO DE SOLUCIONES
-UBICAR DESPUÉS DE SERVICES
-========================================= -->
-
-  <section id="solutions" class="section dark reveal">
-
-    <div class="industry-header">
-      <span class="industry-badge">SOLUCIONES</span>
-      <h2>Servicios orientados al ciclo completo del activo</h2>
-    </div>
-
-    <div class="solution-grid">
-
-      <div class="solution-box">
-        <div class="solution-number">01</div>
-        <h3>Venta de equipos</h3>
-        <p>
-          Encuentra en la bistore equipos con garantía y recomendados.
-        </p>
-        <a href="https://bigstore.rvmia.com/" class="skill-header">Ir a la página</a>
-      </div>
-
-
-      <div class="solution-box">
-        <div class="solution-number">02</div>
-        <h3>Diseño de proyectos</h3>
-        <p>
-          Diseño a la medida, ingeniería de detalle, selección de equipos y diseño de sistemas HVAC, ventilación y
-          automatización.
-        </p>
-        <a href="/pages/ingenieria-last-cad-hvac-proyectos.html" class="skill-header">Ver
-          más</a>
-      </div>
-
-      <div class="solution-box">
-        <div class="solution-number">03</div>
-        <h3>Suministro de equipos</h3>
-        <p>
-          Equipos de climatización seleccionados según requerimientos reales de operación.
-        </p>
-        <a href="/pages/suministro-hvac.html" class="skill-header">Ver
-          más</a>
-      </div>
-
-      <div class="solution-box">
-        <div class="solution-number">04</div>
-        <h3>Instalación y Puesta en Marcha</h3>
-        <p>
-          Ejecución bajo criterios de ingeniería, seguridad y eficiencia energética.
-        </p>
-        <a href="/pages/proyectos-instalacion-montajes-HVAC-BMS.html" class="skill-header">Ver
-          más</a>
-      </div>
-
-      <div class="solution-box">
-        <div class="solution-number">05</div>
-        <h3>Retrofit y Modernización</h3>
-        <p>
-          Actualización tecnológica de sistemas existentes mediante controladores, IIoT y automatización.
-        </p>
-        <a href="/pages/bms-iiot.html" class="skill-header">Ver más</a>
-      </div>
-
-      <div class="solution-box">
-        <div class="solution-number">06</div>
-        <h3>Operación y Mantención</h3>
-        <p>
-          Programas preventivos, correctivos y predictivos orientados a continuidad operacional.
-        </p>
-        <a href="/pages/mantenimiento-preventivo-correctivo-refracciones-diagóstico-HVAC-BMS.html"
-          class="skill-header">Ver más</a>
-      </div>
-
-      <div class="solution-box">
-    <div class="solution-number">07</div>
-    <h3>IIoT y Automatización Industrial</h3>
-    <p>
-        Desarrollo de plataformas IIoT para monitoreo remoto, adquisición de datos, telemetría, dashboards, control de equipos HVAC, energía, BMS y procesos industriales.
-    </p>
-    <a href="/pages/bms-iiot.html" class="skill-header">Ver más</a>
-</div>
-
-<div class="solution-box">
-    <div class="solution-number">08</div>
-    <h3>Ingeniería de Software</h3>
-    <p>
-        Desarrollo de aplicaciones web, APIs, sistemas empresariales, integraciones BACnet, Modbus, MQTT y soluciones personalizadas para gestión, monitoreo y analítica de datos.
-    </p>
-    <a href="/pages/bms-iiot.html" class="skill-header">Ver más</a>
-</div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================================
-NUEVA SECTION | BENEFICIOS
-========================================= -->
-
-  <section class="section benefits-section reveal">
-
-    <div class="industry-header">
-      <span class="industry-badge">RESULTADOS</span>
-      <h2>Beneficios para tu operación</h2>
-    </div>
-
-    <div class="benefits-grid">
-
-      <div class="benefit-item">
-        <span class="benefit-value counter" data-target="30">0</span>
-        <small>%</small>
-        <p>Reducción potencial de consumo energético</p>
-      </div>
-
-      <div class="benefit-item">
-        <span class="benefit-value counter" data-target="24">0</span>
-        <small>/7</small>
-        <p>Supervisión remota permanente</p>
-      </div>
-
-      <div class="benefit-item">
-        <span class="benefit-value counter" data-target="100">0</span>
-        <small>%</small>
-        <p>Trazabilidad operacional</p>
-      </div>
-
-      <div class="benefit-item">
-        <span class="benefit-value counter" data-target="40">0</span>
-        <small>%</small>
-        <p>Menos fallas inesperadas</p>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================================
-NUEVA SECTION | CTA
-========================================= -->
-
-  <section class="section cta-section reveal">
-
-    <div class="cta-box">
-
-      <h2>¿Tu sistema HVAC sigue operando como hace 10 años?</h2>
-
-      <p>
-        Evoluciona hacia una infraestructura conectada, eficiente y preparada para Industria 4.0.
-      </p>
-
-      <a href="./pages/formulario-contacto-rvmia.html" class="cta-btn">
-        Solicitar Evaluación Técnica
-      </a>
-
-    </div>
-
-  </section>
-
-  <!-- SERVICES -->
+  <!-- SERVICIOS -->
   <section id="services" class="section dark reveal">
 
     <h2>
-      Servicios HVAC, Ventilación Mecánica y Automatización
+      Servicios de Ingeniería, Software, HVAC y Automatización
     </h2>
+
     <div class="grid">
 
       <!-- CARD 1 -->
@@ -624,21 +474,24 @@ NUEVA SECTION | CTA
           <button class="cta-btn" onclick="window.location.href='/pages/proyectos-instalacion-montajes-HVAC-BMS.html'">
             Ver más
           </button>
+
           <br><br>
+
           <p>
             Diseñamos e instalamos sistemas HVAC integrales y climatización eficiente, orientado a la mantención
-            predictiva, control inteligente y monitoreo remoto,
-            garantizando confort térmico, vida útil, rendimiento energético y operación confiable.
+            predictiva, control inteligente y monitoreo remoto, garantizando confort térmico, vida útil, rendimiento
+            energético y operación confiable.
           </p>
 
         </div>
 
       </article>
-      <!-- CARD 1.5 -->
+
+      <!-- CARD 2 -->
       <article class="skill-card">
 
         <button class="skill-header">
-          Mantenimiento preventivo y correctivo.
+          Mantenimiento preventivo y correctivo
           <span class="arrow">›</span>
         </button>
 
@@ -649,7 +502,7 @@ NUEVA SECTION | CTA
           <img src="./assetss/INSTALL/10.jpg" class="slide-img" />
           <img src="./assetss/INSTALL/11.jpg" class="slide-img" />
           <img src="./assetss/INSTALL/18.jpeg" class="slide-img" />
-          <img src="./assetss/INSTALL/12.jpg" class="slide-img " />
+          <img src="./assetss/INSTALL/12.jpg" class="slide-img" />
           <img src="./assetss/INSTALL/13.jpg" class="slide-img" />
           <img src="./assetss/INSTALL/14.jpg" class="slide-img" />
           <img src="./assetss/INSTALL/15.jpg" class="slide-img" />
@@ -658,10 +511,12 @@ NUEVA SECTION | CTA
         </div>
 
         <div class="skill-content">
+
           <button class="cta-btn"
             onclick="window.location.href='/pages/mantenimiento-preventivo-correctivo-refracciones-diagóstico-HVAC-BMS.html'">
             Ver más
           </button>
+
           <br><br>
 
           <p>
@@ -674,7 +529,7 @@ NUEVA SECTION | CTA
 
       </article>
 
-      <!-- CARD 2 -->
+      <!-- CARD 3 -->
       <article class="skill-card">
 
         <button class="skill-header">
@@ -696,6 +551,7 @@ NUEVA SECTION | CTA
           <button class="cta-btn" onclick="window.location.href='/pages/ingenieria-last-cad-hvac-proyectos.html'">
             Ver más
           </button>
+
           <br><br>
 
           <p>
@@ -708,55 +564,47 @@ NUEVA SECTION | CTA
 
       </article>
 
-      <!-- CARD 3 -->
+      <!-- CARD 4 SOFTWARE -->
       <article class="skill-card">
 
         <button class="skill-header">
-          Ingeniería y aplicación de sistemas informáticos.
+          Ingeniería y aplicación de sistemas informáticos
           <span class="arrow">›</span>
         </button>
 
-        <div class="service-slider">
+        <div class="repo-links">
+          <a href="pages/desarrollo-de-sistemas-web-software.html">
+            Aplicaciones · APIs · Dashboards · Cloud
+          </a>
 
-          <img src="./assetss/DEV/5.jpeg" class="slide-img active" />
-          <img src="./assetss/DEV/11.jpg" class="slide-img" />
-          <img src="./assetss/DEV/12.jpg" class="slide-img" />
-          <img src="./assetss/DEV/10.jpeg" class="slide-img" />
-          <img src="./assetss/DEV/6.jpeg" class="slide-img" />
-          <img src="./assetss/DEV/8.jpeg" class="slide-img" />
-          <img src="./assetss/DEV/9.jpeg" class="slide-img" />
-          <img src="./assetss/DEV/3.png" class="slide-img" />
-          <img src="./assetss/DEV/4.jpeg" class="slide-img" />
-          <img src="./assetss/DEV/21.jpeg" class="slide-img" />
-          <img src="./assetss/DEV/1.png" class="slide-img" />
-          <img src="./assetss/DEV/2.jpg" class="slide-img" />
-
+          <a href="pages/desarrollo-de-sistemas-web-software.html">
+            Software Industrial · IIoT · Integraciones a Medida
+          </a>
         </div>
 
         <div class="skill-content">
 
-          <button class="cta-btn" onclick="window.location.href='/pages/bms-iiot.html'">
+          <button class="cta-btn" onclick="window.location.href='pages/desarrollo-de-sistemas-web-software.html'">
             Ver más
           </button>
+
           <br><br>
 
           <p>
             Diseño, implementación y mantenimiento de plataformas digitales, software y aplicaciones inteligentes para
-            automatización, monitoreo remoto,
-            IoT y gestión empresarial, integrando desarrollo web Fullstack y API, analítica, dashboards y soluciones
-            cloud
-            escalables para diferentes entornos.
+            automatización, monitoreo remoto, IoT y gestión empresarial, integrando desarrollo web Fullstack y APIs,
+            analítica, dashboards y soluciones cloud escalables para diferentes entornos.
           </p>
 
         </div>
 
       </article>
 
-      <!-- CARD 4 -->
+      <!-- CARD 5 -->
       <article class="skill-card">
 
         <button class="skill-header">
-          Comercialización de maquinaria e instrumentación.
+          Comercialización de maquinaria e instrumentación
           <span class="arrow">›</span>
         </button>
 
@@ -773,33 +621,34 @@ NUEVA SECTION | CTA
         </div>
 
         <div class="skill-content">
+
           <button class="cta-btn" onclick="window.location.href='/pages/suministro-hvac.html'">
             Ver más
           </button>
-        <br><br>
+
+          <br><br>
 
           <p>
-            Suministramos e instalación de equipos, comercialización de maquinaria, instrumentación, controladores y
-            tableros eléctricos.
-            ofreciendo soluciones integrales para proyectos técnicos en Colombia.
+            Suministramos e instalamos equipos, comercializamos maquinaria, instrumentación, controladores y tableros
+            eléctricos, ofreciendo soluciones integrales para proyectos técnicos en Colombia.
           </p>
 
         </div>
 
       </article>
 
-      <!-- CARD 5 -->
+      <!-- CARD 6 -->
       <article class="skill-card">
 
         <button class="skill-header">
-          Stack de plataformas.
+          Stack de plataformas
           <span class="arrow">›</span>
         </button>
 
         <div class="repo-links">
 
           <a href="https://bigstore.rvmia.com" target="_blank">
-            E-commerce de tecnología (en desarrollo)
+            E-commerce de tecnología
           </a>
 
           <a href="https://arcontroller-web.onrender.com/" target="_blank">
@@ -813,83 +662,229 @@ NUEVA SECTION | CTA
     </div>
 
   </section>
+  
+  <!-- PORTAFOLIO DE SOLUCIONES -->
+  <section id="solutions" class="section dark reveal">
 
+    <div class="industry-header">
+      <span class="industry-badge">SOLUCIONES</span>
+      <h2>Servicios orientados al ciclo completo del activo y la operación digital</h2>
+    </div>
+
+    <div class="solution-grid">
+
+      <div class="solution-box">
+        <div class="solution-number">01</div>
+        <h3>Venta de equipos</h3>
+        <p>
+          Encuentra en BigStore equipos, tecnología e instrumentación para proyectos técnicos y operativos.
+        </p>
+        <a href="https://bigstore.rvmia.com/" class="skill-header">Ir a la página</a>
+      </div>
+
+      <div class="solution-box">
+        <div class="solution-number">02</div>
+        <h3>Diseño de proyectos</h3>
+        <p>
+          Diseño a la medida, ingeniería de detalle, selección de equipos y diseño de sistemas HVAC, ventilación y
+          automatización.
+        </p>
+        <a href="/pages/ingenieria-last-cad-hvac-proyectos.html" class="skill-header">Ver más</a>
+      </div>
+
+      <div class="solution-box">
+        <div class="solution-number">03</div>
+        <h3>Suministro de equipos</h3>
+        <p>
+          Equipos de climatización seleccionados según requerimientos reales de operación.
+        </p>
+        <a href="/pages/suministro-hvac.html" class="skill-header">Ver más</a>
+      </div>
+
+      <div class="solution-box">
+        <div class="solution-number">04</div>
+        <h3>Instalación y Puesta en Marcha</h3>
+        <p>
+          Ejecución bajo criterios de ingeniería, seguridad y eficiencia energética.
+        </p>
+        <a href="/pages/proyectos-instalacion-montajes-HVAC-BMS.html" class="skill-header">Ver más</a>
+      </div>
+
+      <div class="solution-box">
+        <div class="solution-number">05</div>
+        <h3>Retrofit y Modernización</h3>
+        <p>
+          Actualización tecnológica de sistemas existentes mediante controladores, IIoT y automatización.
+        </p>
+        <a href="/pages/bms-iiot.html" class="skill-header">Ver más</a>
+      </div>
+
+      <div class="solution-box">
+        <div class="solution-number">06</div>
+        <h3>Operación y Mantención</h3>
+        <p>
+          Programas preventivos, correctivos y predictivos orientados a continuidad operacional.
+        </p>
+        <a href="/pages/mantenimiento-preventivo-correctivo-refracciones-diagóstico-HVAC-BMS.html"
+          class="skill-header">Ver más</a>
+      </div>
+
+      <div class="solution-box">
+        <div class="solution-number">07</div>
+        <h3>IIoT y Automatización Industrial</h3>
+        <p>
+          Desarrollo de plataformas IIoT para monitoreo remoto, adquisición de datos, telemetría, dashboards, control
+          de equipos HVAC, energía, BMS y procesos industriales.
+        </p>
+        <a href="/pages/bms-iiot.html" class="skill-header">Ver más</a>
+      </div>
+
+      <div class="solution-box">
+        <div class="solution-number">08</div>
+        <h3>Desarrollo de Software</h3>
+        <p>
+          Desarrollo de aplicaciones web, APIs, backend, dashboards, plataformas cloud, software industrial e
+          integraciones BACnet, Modbus, MQTT y otras soluciones a medida.
+        </p>
+        <a href="pages/desarrollo-de-sistemas-web-software.html" class="skill-header">Ver más</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section benefits-section reveal">
+
+    <div class="industry-header">
+      <span class="industry-badge">BENEFICIOS</span>
+
+      <h2>Una visión integral de la infraestructura y la tecnología</h2>
+
+      <p>
+        Integramos activos físicos, automatización, datos y software para crear soluciones orientadas a resultados.
+      </p>
+    </div>
+
+    <div class="industry-grid">
+
+      <div class="industry-card">
+        <h3>Operación Integrada</h3>
+        <p>
+          Ingeniería, HVAC, automatización, datos y software trabajando como un solo ecosistema.
+        </p>
+      </div>
+
+      <div class="industry-card">
+        <h3>Información en Tiempo Real</h3>
+        <p>
+          Monitoreo, telemetría, dashboards y herramientas digitales para una operación más visible.
+        </p>
+      </div>
+
+      <div class="industry-card">
+        <h3>Soluciones Escalables</h3>
+        <p>
+          Arquitecturas preparadas para evolucionar desde un activo individual hasta plataformas conectadas.
+        </p>
+      </div>
+
+      <div class="industry-card">
+        <h3>Integración Tecnológica</h3>
+        <p>
+          Conexión entre equipos, protocolos, sensores, plataformas, APIs y procesos empresariales.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- REVIEWS -->
   <section class="section reviews-section reveal">
 
     <div class="industry-header">
-        <span class="industry-badge">RESEÑAS</span>
 
-        <h2>Lo que opinan nuestros clientes</h2>
+      <span class="industry-badge">RESEÑAS</span>
 
-        <p>
-            Nuestro compromiso es entregar soluciones de ingeniería confiables,
-            eficientes y orientadas a resultados.
-        </p>
+      <h2>Lo que opinan nuestros clientes</h2>
+
+      <p>
+        Nuestro compromiso es entregar soluciones de ingeniería confiables,
+        eficientes y orientadas a resultados.
+      </p>
+
     </div>
 
     <div class="google-rating-card">
 
-        <div class="rating-score">
-            <span>★★★★★</span>
-            <h3>5.0</h3>
-            <p>Calificación promedio</p>
-        </div>
+      <div class="rating-score">
+        <span>★★★★★</span>
+        <h3>5.0</h3>
+        <p>Calificación promedio</p>
+      </div>
 
-        <div class="rating-info">
-            <h3>Google Reviews</h3>
-            <p>
-                Clientes de proyectos HVAC, automatización, BMS e infraestructura
-                inteligente respaldan nuestro trabajo.
-            </p>
+      <div class="rating-info">
 
-            <a href="https://g.page/r/COLocaTuLinkGoogleAqui/review"
-               target="_blank"
-               class="review-btn">
-                Dejar una reseña
-            </a>
-        </div>
+        <h3>Google Reviews</h3>
+
+        <p>
+          Clientes de proyectos HVAC, automatización, BMS e infraestructura
+          inteligente respaldan nuestro trabajo.
+        </p>
+
+        <a href="https://g.page/r/COLocaTuLinkGoogleAqui/review" target="_blank" class="review-btn">
+          Dejar una reseña
+        </a>
+
+      </div>
 
     </div>
 
     <div class="reviews-grid">
 
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
+      <div class="review-card">
 
-            <p>
-                Excelente acompañamiento técnico durante la ejecución del proyecto.
-                Cumplieron los tiempos y entregaron una solución confiable.
-            </p>
+        <div class="stars">★★★★★</div>
 
-            <h4>Cliente Corporativo</h4>
-        </div>
+        <p>
+          Excelente acompañamiento técnico durante la ejecución del proyecto.
+          Cumplieron los tiempos y entregaron una solución confiable.
+        </p>
 
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
+        <h4>Cliente Corporativo</h4>
 
-            <p>
-                Destacamos la calidad de la ingeniería y la capacidad para integrar
-                HVAC y automatización en una sola solución.
-            </p>
+      </div>
 
-            <h4>Sector Comercial</h4>
-        </div>
+      <div class="review-card">
 
-        <div class="review-card">
-            <div class="stars">★★★★★</div>
+        <div class="stars">★★★★★</div>
 
-            <p>
-                Equipo profesional, soporte oportuno y excelente conocimiento en
-                sistemas BMS e infraestructura inteligente.
-            </p>
+        <p>
+          Destacamos la calidad de la ingeniería y la capacidad para integrar
+          HVAC y automatización en una sola solución.
+        </p>
 
-            <h4>Facility Manager</h4>
-        </div>
+        <h4>Sector Comercial</h4>
+
+      </div>
+
+      <div class="review-card">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          Equipo profesional, soporte oportuno y excelente conocimiento en
+          sistemas BMS e infraestructura inteligente.
+        </p>
+
+        <h4>Facility Manager</h4>
+
+      </div>
 
     </div>
 
-</section>
-
+  </section>
 
   <!-- FOOTER -->
   <footer id="contact" class="footer">
@@ -902,9 +897,8 @@ NUEVA SECTION | CTA
         <img src="./assetss/rvmia-removebg-preview.png" alt="RVMIA Logo" />
 
         <p>
-          Ingeniería, automatización, HVAC, BMS,
-          IoT industrial y soluciones inteligentes
-          para edificios e infraestructura crítica.
+          Ingeniería, desarrollo de software, automatización, HVAC, BMS, BMA,
+          IIoT y soluciones inteligentes para edificios, industria e infraestructura crítica.
         </p>
 
         <div class="footer-socials">
@@ -925,9 +919,11 @@ NUEVA SECTION | CTA
         <ul>
           <li>Automatización BMS</li>
           <li>HVAC Industrial</li>
-          <li>IoT & Monitoreo</li>
+          <li>IoT &amp; Monitoreo</li>
           <li>Eficiencia Energética</li>
-          <li>Software Industrial</li>
+          <li>Desarrollo de Software</li>
+          <li>Aplicaciones, APIs &amp; Dashboards</li>
+          <li>Cloud, IIoT &amp; Integraciones</li>
           <li>Smart Buildings</li>
         </ul>
 
@@ -940,7 +936,9 @@ NUEVA SECTION | CTA
 
         <ul>
           <li><a href="#about">Quiénes Somos</a></li>
-          <li><a href="/pages/legal/descargo-de-responsabilidad-tecnica.html">Descargo de responsabilidad técnica</a></li>
+          <li><a href="pages/desarrollo-de-sistemas-web-software.html">Software &amp; Data</a></li>
+          <li><a href="/pages/legal/descargo-de-responsabilidad-tecnica.html">Descargo de responsabilidad técnica</a>
+          </li>
           <li><a href="/pages/legal/politica-cookies.html">Política de cookies</a></li>
           <li><a href="/pages/legal/politica-privacidad.html">Política de Privacidad</a></li>
           <li><a href="/pages/legal/terminos-y-condiciones.html">Términos y Condiciones</a></li>
@@ -981,7 +979,6 @@ NUEVA SECTION | CTA
 
     </div>
 
-    <!-- BOTTOM -->
     <div class="footer-bottom">
 
       <p>
@@ -990,7 +987,7 @@ NUEVA SECTION | CTA
       </p>
 
       <p>
-        Refrigeration & Ventilation Management - IA S.A.S. 
+        Refrigeration & Ventilation Management - IA S.A.S.
       </p>
 
     </div>
@@ -1003,3 +1000,4 @@ NUEVA SECTION | CTA
 </body>
 
 </html>
+```
